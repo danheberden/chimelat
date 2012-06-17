@@ -18,7 +18,7 @@ limechat limescrips. [Check them out](https://github.com/rpflorence/limescripts)
 Clone the theme into your Limechat themes folder. Below is the default but in
 case it isn't there, open LimeChat's preferences, go to the Theme tab, and _Open in Finder_.
 
-```shell
+```sh
 cd ~/Library/"Application Support"/LimeChat/Themes
 git clone git://github.com/danheberden/chimelat.git
 
