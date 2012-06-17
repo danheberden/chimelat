@@ -1,0 +1,162 @@
+html {
+  font-family: 'Menlo';
+  font-size: 11pt;
+  background-color: #191919;
+  color: #EEE;
+  word-wrap: break-word;
+  margin: 0;
+  padding: 3px 4px 10px 4px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* the html tag has these classes and attributes too */
+body.normal {}
+body.console {}
+body[type=channel] {}
+body[type=talk] {}
+body[type=console] {}
+body[channelname=#limechat] {}
+
+hr { margin: 0.5em 2em; }
+a {}
+.inlineimage {}
+
+/* lines */
+.line { margin: 0 -4px; padding: 0 4px 1px 4px; }
+.line[alternate=even] {}
+.line[alternate=odd] {}
+.line[type=action] .sender:before {
+  content: "• ";
+  white-space: nowrap;
+}
+.line[highlight=true] {
+  background-color: #000;
+}
+
+/* line componenets */
+.url { word-break: break-all; }
+.address { text-decoration: underline; word-break: break-all; }
+.highlight { color: #f90; font-weight: bold; font-size:1.3em; }
+.time { color: #048; font: courier; }
+.place { color: #87B359; }
+body .line .notice { color:#F00; }
+a { color: #FFF; }
+
+/* nickname for text messages */
+.sender[type=myself] { color: #E8A0C4; }
+.sender[type=normal] { color: #80AACF; }
+.sender[type=normal][colornumber='0'] {}
+.sender[type=normal][colornumber='1'] {}
+.sender[type=normal][colornumber='2'] {}
+.sender[type=normal][colornumber='3'] {}
+.sender[type=normal][colornumber='4'] {}
+.sender[type=normal][colornumber='5'] {}
+.sender[type=normal][colornumber='6'] {}
+.sender[type=normal][colornumber='7'] {}
+.sender[type=normal][colornumber='8'] {}
+.sender[type=normal][colornumber='9'] {}
+.sender[type=normal][colornumber='10'] {}
+.sender[type=normal][colornumber='11'] {}
+.sender[type=normal][colornumber='12'] {}
+.sender[type=normal][colornumber='13'] {}
+.sender[type=normal][colornumber='14'] {}
+.sender[type=normal][colornumber='15'] {}
+
+/* message body */
+.message[type=system] { color: #666; }
+.message[type=error] { color: #f00; font-weight: bold; }
+.message[type=reply] { color: #088; }
+.message[type=error_reply] { color: #f00; }
+.message[type=dcc_send_send] { color: #088; }
+.message[type=dcc_send_receive] { color: #00c; }
+.message[type=privmsg] {}
+.message[type=notice] { color: #888; }
+.message[type=action] { color: #080; }
+.message[type=join] { color: #555; }
+.message[type=part] { color: #555; }
+.message[type=kick] { color: #555; }
+.message[type=quit] { color: #555; }
+.message[type=kill] { color: #555; }
+.message[type=nick] { color: #555; }
+.message[type=mode] { color: #555; }
+.message[type=topic] { color: #555; }
+.message[type=invite] { color: #555; }
+.message[type=wallops] { color: #555; }
+.message[type=debug_send] { color: #aaa; }
+.message[type=debug_receive] { color: #444; }
+
+.message[type=system],
+.message[type=error],
+.message[type=join],
+.message[type=kick],
+.message[type=quit],
+.message[type=notice],
+.message[type=action],
+.message[type=nick] {
+  font-size: 0.8em;
+}
+
+.console .line[type=join],
+.console .line[type=system],
+.console .message[type=kill],
+.console .line[type=quit],
+.console .line.event[type=reply] {
+    display:none;
+}
+
+/* mIRC color effects */
+.effect[color-number='0'] {}
+.effect[color-number='1'] {}
+.effect[color-number='2'] {}
+.effect[color-number='3'] {}
+.effect[color-number='4'] {}
+.effect[color-number='5'] {}
+.effect[color-number='6'] {}
+.effect[color-number='7'] {}
+.effect[color-number='8'] {}
+.effect[color-number='9'] {}
+.effect[color-number='10'] {}
+.effect[color-number='11'] {}
+.effect[color-number='12'] {}
+.effect[color-number='13'] {}
+.effect[color-number='14'] {}
+.effect[color-number='15'] {}
+.effect[bgcolor-number='0'] {}
+.effect[bgcolor-number='1'] {}
+.effect[bgcolor-number='2'] {}
+.effect[bgcolor-number='3'] {}
+.effect[bgcolor-number='4'] {}
+.effect[bgcolor-number='5'] {}
+.effect[bgcolor-number='6'] {}
+.effect[bgcolor-number='7'] {}
+.effect[bgcolor-number='8'] {}
+.effect[bgcolor-number='9'] {}
+.effect[bgcolor-number='10'] {}
+.effect[bgcolor-number='11'] {}
+.effect[bgcolor-number='12'] {}
+.effect[bgcolor-number='13'] {}
+.effect[bgcolor-number='14'] {}
+.effect[bgcolor-number='15'] {}
+
+/* colors! generated from http://jsbin.com/agavah */
+.line .color0 { color: rgb(252, 105, 105); }
+.line .color1 { color: rgb(105, 198, 252); }
+.line .color2 { color: rgb(252, 216, 105); }
+.line .color3 { color: rgb(122, 105, 252); }
+.line .color4 { color: rgb(179, 252, 105); }
+.line .color5 { color: rgb(233, 105, 252); }
+.line .color6 { color: rgb(105, 252, 142); }
+.line .color7 { color: rgb(252, 105, 161); }
+.line .color8 { color: rgb(105, 252, 252); }
+.line .color9 { color: rgb(252, 159, 105); }
+.line .color10 { color: rgb(105, 142, 252); }
+.line .color11 { color: rgb(235, 252, 105); }
+.line .color12 { color: rgb(179, 105, 252); }
+.line .color13 { color: rgb(125, 252, 105); }
+.line .color14 { color: rgb(252, 105, 216); }
+.line .color15 { color: rgb(105, 252, 196); }
+
