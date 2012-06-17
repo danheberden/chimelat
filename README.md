@@ -21,4 +21,6 @@ Theme tab.
 Just make sure all three files (the `yaml`, `js` and `css`) are in the
 `Theme` directory, open preferences and then you can select the theme.
 
+Screen here: http://danheberden.com/share/79777e5.png
+
 <3z
